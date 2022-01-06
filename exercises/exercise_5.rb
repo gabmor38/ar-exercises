@@ -13,5 +13,9 @@ puts "----------"
 # Hint: Chain together where and size (or count) Active Record methods.
 
 @total_revenue = Store.sum(:annual_revenue)
+@Avg_revenue = Store.average(:annual_revenue)
+@total_sales = Store.where("annual_revenue > ?", 1000000).count
 
 puts @total_revenue 
+puts @Avg_revenue
+puts @total_sales
