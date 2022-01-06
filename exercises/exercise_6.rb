@@ -29,9 +29,8 @@ end
   @store2.employees.create(first_name: "Jane", last_name: "Doe", hourly_rate: 60)
   @store2.employees.create(first_name: "Mario", last_name: "lopez", hourly_rate: 60)
 
-
 class Employee
   belongs_to :store
 end
 
-puts @store1.employees.count
+puts Employee.count
