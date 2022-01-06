@@ -16,6 +16,6 @@ puts "----------"
 @Avg_revenue = Store.average(:annual_revenue)
 @total_sales = Store.where("annual_revenue > ?", 1000000).count
 
-puts @total_revenue 
-puts @Avg_revenue
-puts @total_sales
+puts "Total revenue = #{@total_revenue}"
+puts "Average revenue = #{@Avg_revenue}"
+puts "Total Sales = #{@total_sales}"
